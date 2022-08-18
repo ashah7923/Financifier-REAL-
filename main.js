@@ -40,7 +40,7 @@ let reset_variable = 0;
 let itemsList = [];
 
 function updateValue(e) {
-    totalCost.textContent = e.target.value;
+    totalCost.textContent = "\xa0" + "$" + e.target.value;
 }
 
 
@@ -108,15 +108,21 @@ function submitForm2(event) {
 
     for (let i = 0; i < user_item.length; i++) {
         totalSum = Number(totalSum) + Number(itemsList[i]);
-        totalCost.innerHTML = `$${totalSum}`;
+        totalCost.innerHTML = `\xa0$${totalSum}`; 
     }
     
  
 }
 
-function submitForm3(event) {
+function submitForm3(event) 
     event.preventDefault();
 
     reset_variable = 0;
-    totalCost.innerHTML = 0;
+    totalCost.innerHTML = "";
+    console.log(document);
+    let parentDiv = document.getElementById("user-container");
+    while (parentDiv.firstChild){
+        parentDiv.removeChild(parentDiv.firstChild);
+    }
 }
+
