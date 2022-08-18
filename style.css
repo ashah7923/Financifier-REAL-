@@ -285,3 +285,73 @@ nav {
 html {
     scroll-behavior: smooth;
 }
+
+@media(max-width: 2560px) {
+    #form-container {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
+
+@media(max-width: 1030px) {
+    #form-container {
+        margin-left: 30%; 
+        margin-right: 30%; 
+    }
+}
+
+@media(max-width: 430px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main_text {
+        padding: 30px;
+    }
+
+    #form-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+} 
+
+
+
+@media(max-width: 330px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main_text{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+   
+
+    #contact_text {
+        padding: 1px;
+        font-size: 100%;
+    }
+}
