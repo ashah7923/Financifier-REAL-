@@ -114,7 +114,7 @@ function submitForm2(event) {
  
 }
 
-function submitForm3(event) 
+function submitForm3(event) {
     event.preventDefault();
 
     reset_variable = 0;
